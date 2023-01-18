@@ -28,8 +28,30 @@
 
 ## Results
 ### Data Preprocessing
-- 
+- In the initial preprocessing of the data, the target variables for my model were the "EIN" and "NAME" variables. However, when optimizing the data to try and reach 75% accuracy, "USE_CASE" was also one of my target variables. All other variables were my feature variables for my model. 
 
 ### Compiling, Training, and Evaluating the Model
 
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take to try and increase model performance?
+
+- In the inital preprocessing of the data, I used a total of 110 neurons, broken up in two hidden layers. The first hidden layer had 80 neurons with a relu activation function. While the second hidden layer had 30 neurons with a relu activation function as well. Lastely, I had an output layer that used the sigmoid activation function. The reason I used the relu activation function is because the relu function is faster to compute compared to the sigmoid. 
+
+- However, I was not able to achieve target model performance with an accuracy of 73%. Therefore, I optimized my model to try and achieve a higher accuracy of 75% or greater. I tried to optimize my model at least three times. The first attempt, is when I used "USE_CASE" as a target variable for my model and changed the thresholds for binning. The accuracy score however, was still 73%, Image 4. 
+
+### Image 4: Optimization 1 Accuracy
+![Optimization 1 Accuracy](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/0c47da29d69b030bbbd7b96e9331fa160a0f6d28/images/Image4.png)
+
+- For the second attempt, I added a second hidden layer and increased the total number of neurons from 110 to 140. In the first hidden layer I changed it from 80 to 100, in the second layer, I kept the total number of neurons 30, and in the third hidden layer I added, I had 10 neurons. However, I still ended up with an accuracy of 73%, Image 5.
+
+### Image 5: Optimization 2 Accuracy
+![Optimization 2 Accuacy](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/0c47da29d69b030bbbd7b96e9331fa160a0f6d28/images/Image5.png)
+
+- Lastly, for the third attempt I used different activation functions for the hidden layers and added epochs to the training regimen. For the activation functions on all hidden layers to the sigmoid activation function. Then I changed the epochs from 100 to 200. When I ran the accuracy test though, I still had a 73% accuracy, Image 6. 
+
+### Image 6: Optimization 3 Accuracy
+![Opitimization 3 Accuracy](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/0c47da29d69b030bbbd7b96e9331fa160a0f6d28/images/image6.png)
+
 ## Summary
+- In summary, I was not able to achieve an accuracy of 75% or higher for the model. Therefore, this is not the best model capable of predicting whether applicants will be succeessful if funded by Alphabet Soup. I would recommend using one of the Learning Classifier Models such as the Random Forest Classifier to try and see if they could achieve an accuracy of 75% or greater. The learning classifier algorithms also take less time to train. 
