@@ -3,7 +3,7 @@
 ### Purpose: The purpose of this project is to using machine learning and neural networks to assist in predicting whether applicants will be successful.
 
 ## Analysis
-The analysis script can be found by going to [AlphabetSoupCharity.h5](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/ad8763d676cf1537b8e0eef4b14f64faa508ff00/AlphabetSoupCharity.h5) and [AlphabetSoupCharity.ipynb](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/ad8763d676cf1537b8e0eef4b14f64faa508ff00/AlphabetSoupCharity.ipynb).
+The analysis script can be found by going to [AlphabetSoupCharity.ipynb](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/ad8763d676cf1537b8e0eef4b14f64faa508ff00/AlphabetSoupCharity.ipynb).
 
 - For this project, using my knowledge of Pandas and Scikit-Learn, I preprocessed the dataset in order to compile, train, and evaulate the neural network model. When preprocessing the data, the EIN and NAME variables, were considered my target variables, while the remaining variables were my feature variables for my model. 
 
