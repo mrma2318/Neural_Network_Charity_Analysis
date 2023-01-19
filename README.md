@@ -3,6 +3,8 @@
 ### Purpose: The purpose of this project is to using machine learning and neural networks to assist in predicting whether applicants will be successful.
 
 ## Analysis
+The analysis script can be found by going to [AlphabetSoupCharity.h5](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/ad8763d676cf1537b8e0eef4b14f64faa508ff00/AlphabetSoupCharity.h5) and [AlphabetSoupCharity.ipynb](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/ad8763d676cf1537b8e0eef4b14f64faa508ff00/AlphabetSoupCharity.ipynb).
+
 - For this project, using my knowledge of Pandas and Scikit-Learn, I preprocessed the dataset in order to compile, train, and evaulate the neural network model. When preprocessing the data, the EIN and NAME variables, were considered my target variables, while the remaining variables were my feature variables for my model. 
 
 - Once I dropped my target variables I could then determine the number of unique values for each column. Those with more than 10 unique values, I then determined the number of data points for each unique value. Next, I created a density plot to determine the distribution of the column values, and used the plot to create a cutoff point to bin "rare" categorical variables in a new column. 
@@ -40,6 +42,8 @@ What steps did you take to try and increase model performance?
 
 - However, I was not able to achieve target model performance with an accuracy of 73%. Therefore, I optimized my model to try and achieve a higher accuracy of 75% or greater. I tried to optimize my model at least three times. The first attempt, is when I used "USE_CASE" as a target variable for my model and changed the thresholds for binning. The accuracy score however, was still 73%, Image 4. 
 
+The script for the optimization code can be found by going to [AlphabetSoupCharity_Optimization.ipynb](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/ad8763d676cf1537b8e0eef4b14f64faa508ff00/AlphabetSoupCharity_Optimization.ipynb).
+
 ### Image 4: Optimization 1 Accuracy
 ![Optimization 1 Accuracy](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/0c47da29d69b030bbbd7b96e9331fa160a0f6d28/images/Image4.png)
 
@@ -54,4 +58,4 @@ What steps did you take to try and increase model performance?
 ![Opitimization 3 Accuracy](https://github.com/mrma2318/Neural_Network_Charity_Analysis/blob/0c47da29d69b030bbbd7b96e9331fa160a0f6d28/images/image6.png)
 
 ## Summary
-- In summary, I was not able to achieve an accuracy of 75% or higher for the model. Therefore, this is not the best model capable of predicting whether applicants will be succeessful if funded by Alphabet Soup. I would recommend using one of the Learning Classifier Models such as the Random Forest Classifier to try and see if they could achieve an accuracy of 75% or greater. The learning classifier algorithms also take less time to train. 
+- In summary, I was not able to achieve an accuracy of 75% or higher for the model. Therefore, this is not the best model capable of predicting whether applicants will be succeessful if funded by Alphabet Soup. I would recommend using one of the Learning Classifier Models such as the Random Forest Classifier to try and see if they could achieve an accuracy of 75% or greater. The learning classifier algorithms also take less time to train. In addition, the Random Forest Classifier can hangle larger datasets efficiently, and provide a higher level of accuracy in predicting outcomes compared to the decision tree algorithms. 
